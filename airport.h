@@ -1,26 +1,54 @@
 // Plane class
 class Plane {
 private:
- int id; 
+ const int id; 
  static int count;
- static douple avg_wtime;
-  int time_arrival; // setter and getters
+ int wtime;
+ static int wait[count];
+ int time_arrival; // setter and getters
 public:
-Plane(int id);
-  void settimearrival (int time_arrival);
-  douple gettimearrival (int time_arrival);
-int getId();
+ Plane(int ID) : id(ID);
+ static double avgwait();
+ void setwtime(int time);
+ int getwtime();
+ void settimearrival (int time);
+ int gettimearrival ();
+ int getId();
+};
+
+template <class T>;
+class DEQ{
+private:
+ struct Node{
+  T Value;
+  Node* next;
+  Node* previous;
+ };
+ Node<T> *front;
+ Node<T> *rear;
+ int len;
+public:
+ DEQ();
+ ~DEQ();
+ bool DEQisEmpty();
+ void Add_Front(T data);
+ void Add_Rear(T data);
+ T Remove_Front();
+ T Remove_Rear();
+ T View_Front();
+ T View_Rear();
+ int DEQ_Length();
+ void DisplayDEQ();
 };
 
 // Runway class
 class Runway {
 private:
-bool isOccupied; // is runway occupied or not
-  const int time_landing;
+int arrivaltime;
+int time_landing;
 public:
-Runway(int time_landingg):  time_landing(time_landingg);
-bool getOccupied();
-void setOccupied(bool occupied);
+Runway(double time_landingg);
+bool Occupied(double arrivalt,double currenttime);
 };
 
 // Airport class
@@ -28,19 +56,14 @@ class Airport {
 private:
 Runway runway; // runway object
 deque<Plane*> landingQueue; // queue of planes waiting to land
-deque<Plane*> takeoffQueue; // queue of planes waiting to take off
+int avgwt;
 double landingProb; // probability of a plane arriving for landing
-const int time_max; //maximum time the plane can stay in the queue before taking off (assuming the airport has a policy to avoid planes from waiting too long)
-const douiple inter_arrival_time;//time between arrivals of consecutive planes
-;
-double takeoffProb; // probability of a plane arriving for takeoff
+int time_max; //maximum time the plane can stay in the queue before taking off (assuming the airport has a policy to avoid planes from waiting too long)
+int enter_arrival_time;//time between arrivals of consecutive planes
 int clock; // clock that counts the number of minutes simulated
 public:
-Airport(douple time_landing,double landingProb, double takeoffProb);
+Airport(int max,int entertime);
 void simulate( int simulationTime);
-double landingprob(int currenttime); // return probabilty
-double takeoffprob(int currenttime);
-void planeArrives();
-void planeLands();
-int planeTakesOff();
+double landingprob(); // return probabilty
+void planeArrives(Plane p);
 };
