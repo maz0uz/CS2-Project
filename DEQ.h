@@ -2,7 +2,8 @@
 #define DEQ_H
 template < class T > ;
 class DEQ {
-  private: struct Node {
+  private: 
+  struct Node {
     T Value;
     Node * next;
     Node * previous;
@@ -10,7 +11,8 @@ class DEQ {
   Node < T > * front;
   Node < T > * rear;
   int len;
-  public: DEQ();
+  public: 
+  DEQ();
   ~DEQ();
   bool DEQisEmpty();
   void Add_Front(T data);
