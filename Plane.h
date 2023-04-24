@@ -1,7 +1,8 @@
 #ifndef PLANE_H
 #define PLANE_H
 class Plane {
-  private: const int id;
+  private: 
+  const int id;
   static int numberofplanes;
   int wtime;
   static int wait[count];
