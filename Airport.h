@@ -10,7 +10,7 @@
 // Airport class
 class Airport {
   private: Runway runway; // runway object
-  DEQ < Plane * > landingQueue; // queue of planes waiting to land
+  DEQ < Plane > landingQueue; // queue of planes waiting to land
   int avgwt;
   double landingProb; // probability of a plane arriving for landing
   int time_max;
