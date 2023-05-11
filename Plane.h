@@ -21,6 +21,7 @@ class Plane {
     double time_arrival;
  public:
   Plane();
+  void AddPlane(double wait,double arrive);
   static double avgwait();
   void setwtime(double time);
   int getwtime();
