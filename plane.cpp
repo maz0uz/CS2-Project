@@ -1,5 +1,14 @@
 //
 //  plane.cpp
+//  project cs2
+//
+//  Created by macbook on 11/05/2023.
+//
+
+#include "plane.hpp"
+#include <vector>
+//
+//  plane.cpp
 //  m
 //
 //  Created by macbook on 11/05/2023.
@@ -10,10 +19,11 @@ Plane :: Plane() : id(numberofplanes){
     wtime=0;
     time_arrival=0;
 }
-void Plane :: AddPlane(double wait,double arrive){
-    wtime=wait;
+void Plane :: AddPlane(double waittime,double arrive){
+    wtime=waittime;
     time_arrival=arrive;
     numberofplanes++;
+    wait.push_back(waittime);
 }
 double Plane :: avgwait(){
     auto iter=wait.begin();
