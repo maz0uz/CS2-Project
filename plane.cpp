@@ -10,6 +10,11 @@ Plane :: Plane() : id(numberofplanes){
     wtime=0;
     time_arrival=0;
 }
+void Plane :: AddPlane(double wait,double arrive){
+    wtime=wait;
+    time_arrival=arrive;
+    numberofplanes++;
+}
 double Plane :: avgwait(){
     auto iter=wait.begin();
     double sum=0;
