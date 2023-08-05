@@ -25,7 +25,7 @@ The airport simulation queue model helps optimize runway occupancy and waiting t
 We would like to express gratitude to Dr. Howida for her invaluable support and mentorship. Thanks to Mr. Mohamed Basuony for his insightful explanations. Special thanks to the contributors Mohamed Azouz, Saif Ahmed, and Hadi Hesham.
 
 ## Installation
-Please refer to the [GitHub repository QT folder] (https://github.com/maz0uz/CS2-Project/Project Folder) for installation instructions.
+Please refer to the [GitHub repository QT folder](https://github.com/maz0uz/CS2-Project/Project-Folder) for installation instructions.
 
 ## Contributors
 Mohamed Azouz (@maz0uz) 900225230
