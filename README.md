@@ -1,7 +1,7 @@
 # Simulating Randomness in Airport Landing Queue: Estimating Average Waiting Time and Analyzing Runway Occupancy
 
 ## Description
-This project introduces an airport simulation queue model for analyzing runway occupancy and plane waiting times. The model considers arrival rate, landing time, and average time between arrivals. It aims to estimate the average waiting time for airplanes in the landing queue before they can land. The simulation provides valuable insights into the efficiency of the landing process, helping identify areas for improvement and optimization in airport operations.
+This project introduces an airport simulation queue model for analyzing runway occupancy and plane waiting times. The QT model considers arrival rate, landing time, and average time between arrivals. It aims to estimate the average waiting time for airplanes in the landing queue before they can land. The simulation provides valuable insights into the efficiency of the landing process, helping identify areas for improvement and optimization in airport operations.
 
 ## Problem Definition
 The goal is to simulate the waiting queues of airplanes in an airport with a single landing runway. Airplanes arrive near the airport with random arrival times. Once in the landing queue, a plane may have to wait until the runway becomes available. After landing, the runway remains occupied for a fixed service time until the plane successfully docks.
