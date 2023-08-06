@@ -28,6 +28,6 @@ We would like to express gratitude to Dr. Howida for her invaluable support and 
 Please refer to the [GitHub repository QT folder](https://github.com/maz0uz/CS2-Project/Project-Folder) for installation instructions.
 
 ## Contributors
-Mohamed Azouz (@maz0uz) 900225230
-Saif Ahmed (@Saifahmeed) 900225535
-Hadi Hesham (@HadiHesham) 900221206
+Mohamed Azouz [@maz0uz] 900225230
+Saif Ahmed [@Saifahmeed] 900225535
+Hadi Hesham [@HadiHesham] 900221206
